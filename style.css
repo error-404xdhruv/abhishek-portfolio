@@ -60,6 +60,10 @@ img{
     color: var(--c-brand);
 }
 
+.nav-link.active:hover{
+    color: black;
+}
+
 .btn{
     font-weight: 600;
     font-size: 14px;
@@ -118,4 +122,42 @@ img{
     color: var(--c-brand);
     font-size: 34px;
     flex: none;
+}
+
+/* service-cards */
+
+.theme-shadow{
+    box-shadow: var(--box-shadow);
+}
+
+.service{
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.service::after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: rgba(var(--c-brand-rgb), 0.2);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: var(--transition);
+}
+
+.service:hover::after{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: var(--c-brand);
+}
+
+.service:hover h5, .service:hover p, .service:hover .iconbox{
+    color: white;
+}
+
+.service:hover .iconbox{
+    background-color: rgba(255, 255, 255, 0.2);
 }
