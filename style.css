@@ -112,6 +112,7 @@ img{
 }
 
 /* about-me */
+
 .iconbox{
     width: 70px;
     height: 70px;
@@ -160,4 +161,68 @@ img{
 
 .service:hover .iconbox{
     background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* testimonials */
+
+.stars{
+    color: #FFD700;
+}
+
+.review-head{
+    position: relative;
+}
+
+.review small{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--c-brand);
+}
+
+/* ::after adds some cosmetic components */
+.review-head::after{
+
+    /* this is for the triangle which we are seeing between review and author photo */
+    content: "";
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    bottom: -14px;
+    background-color: white;
+    transform: rotate(45deg);
+}
+
+/* footer */
+
+footer{
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+footer .line{
+    width: 40px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin: 12px 0 24px ;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 100px;
+}
+
+.social-icons a:hover {
+    background-color: var(--c-brand);
+    color: white;
+}
+
+.footer-bottom{
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
 }
