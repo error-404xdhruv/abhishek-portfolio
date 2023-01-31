@@ -127,6 +127,11 @@ img{
 
 /* service-cards */
 
+.simple{
+    text-decoration: none;
+    color: var(--c-body)
+}
+
 .theme-shadow{
     box-shadow: var(--box-shadow);
 }
@@ -180,17 +185,7 @@ img{
 }
 
 /* ::after adds some cosmetic components */
-.review-head::after{
 
-    /* this is for the triangle which we are seeing between review and author photo */
-    content: "";
-    width: 28px;
-    height: 28px;
-    position: absolute;
-    bottom: -14px;
-    background-color: white;
-    transform: rotate(45deg);
-}
 
 /* footer */
 
